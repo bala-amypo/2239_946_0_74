@@ -1,34 +1,27 @@
 package com.example.demo.entity;
 
 public class Student {
-private int id;
+private long id;
 private String stuname;
 private String studentemail;
 private int cgpa ;
-package com.example.demo.entity;
-
-public class Student {
-private int id;
-private String stuname;
-private String studentemail;
-private int cgpa ;
-public int getId() {
+public long getId() {
     return id;
 }
 public void setId(int id) {
     this.id = id;
 }
-public String getStuname() {
-    return stuname;
+public String getname() {
+    return name;
 }
-public void setStuname(String stuname) {
-    this.stuname = stuname;
+public void setname(String name) {
+    this.name = name;
 }
-public String getStudentemail() {
-    return studentemail;
+public String getemail() {
+    return email;
 }
-public void setStudentemail(String studentemail) {
-    this.studentemail = studentemail;
+public void setemail(String email) {
+    this.email = email;
 }
 public int getCgpa() {
     return cgpa;
@@ -38,8 +31,8 @@ public void setCgpa(int cgpa) {
 }
 public Student(int id, String stuname, String studentemail, int cgpa) {
     this.id = id;
-    this.stuname = stuname;
-    this.studentemail = studentemail;
+    this.name = name;
+    this.email = email;
     this.cgpa = cgpa;
 }
 public Student() {
