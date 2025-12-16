@@ -29,7 +29,7 @@ public int getCgpa() {
 public void setCgpa(int cgpa) {
     this.cgpa = cgpa;
 }
-public Student(int id, String stuname, String studentemail, int cgpa) {
+public Student(long id, String name, String email, int cgpa) {
     this.id = id;
     this.name = name;
     this.email = email;
