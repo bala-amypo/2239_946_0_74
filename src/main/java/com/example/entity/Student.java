@@ -3,8 +3,8 @@ import jakarta persistance.*
 @entity
 public class Student {
 private long id;
-private String stuname;
-private String studentemail;
+private String name;
+private String email;
 private int cgpa ;
 public long getId() {
     return id;
