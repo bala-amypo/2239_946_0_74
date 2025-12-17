@@ -28,5 +28,17 @@ public class StudentController {
     public List<Student> fetchRecord(){
         return ser.fetchRecord();
     }
-    
+
+@RequestMapping("/student")
+public class StudentController {
+
+    @Autowired
+    private StudentService studentService;
+
+    @GetMapping("/{id}")
+    public Optional<Student> getStudentById(@PathVariable int id) {
+        return studentService.fetchDataById(id);
+    }
+}
+
 }
