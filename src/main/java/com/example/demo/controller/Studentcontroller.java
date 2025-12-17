@@ -1,24 +1,32 @@
-package com.example.demo.service;
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+import com.example.demo.entity.Student;
+import com.example.demo.service.StudentService;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
 
-import com.example.demo.entity.Student;
-import com.example.demo.repository.StudentRepository;
 
-@Service
-public class StudentService {
+@RestController
+public class StudentController {
 
     @Autowired
-    StudentRepository repo;
+    StudentService ser;
+    
+    @PostMapping("/add")
 
-    public Student createData(Student stu) {
-        return repo.save(stu);
+    public Student createData(@RequestBody Student stu){
+        return ser.createData(stu);
     }
 
-    public List<Student> fetchRecord() {
-        return repo.findAll();
+    @GetMapping("/fetch")
+    public List<Student> fetchRecord(){
+        return ser.fetchRecord();
     }
+    
 }

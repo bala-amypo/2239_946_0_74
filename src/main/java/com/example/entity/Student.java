@@ -2,11 +2,11 @@ package com.example.demo.entity;
 import jakarta persistance.*
 @entity
 public class Student {
-private long id;
+private int id;
 private String name;
 private String email;
 private int cgpa ;
-public long getId() {
+public int getId() {
     return id;
 }
 public void setId(int id) {
