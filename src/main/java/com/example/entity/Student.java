@@ -30,8 +30,14 @@ public class Student{
     Public void setCgpa(Float cgpa){
         this.cgpa=cgpa;
     }
-Public Student(int id,string name,string email,float cgpa,){
-    
+public Student(int id,string name,string email,float cgpa,){
+    this.id=id;
+    this.name=name;
+    This.email=email;
+     this.cgpa=cgpa;
+}
+public Student(){
 
 }
-    
+
+}
