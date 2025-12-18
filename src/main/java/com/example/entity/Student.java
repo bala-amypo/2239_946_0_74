@@ -12,6 +12,24 @@ public class Student{
     public int setId(int id){
     this.id=id;
     }
-    public string getName()
+    public String getName(){
+        return name;
+    }
+    public String setName(String name){
+        this.name=name;
+    }
+    Public String getEmail(){
+        return Email;
+    }
+    Public void SetEmail(String email){
+    This.email=email;
+    }
+    Public Float getCgpa(){
+        return Cgpa;
+    }
+    Public Float setCgpa(Float Cgpa){
+        this.Cgpa=Cgpa;
+    }
+
     }
 }
